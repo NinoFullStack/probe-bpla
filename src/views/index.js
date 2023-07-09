@@ -1,0 +1,6 @@
+export { default as HomeView } from './HomeView.vue'
+export { default as ChoosDroneView } from './ChoosDroneView.vue'
+export { default as AssemblyView } from './AssemblyView.vue'
+export { default as RoutingView } from './RoutingView.vue'
+export { default as DataParsingView } from './DataParsingView.vue'
+export { default as ReportView } from './ReportView.vue'

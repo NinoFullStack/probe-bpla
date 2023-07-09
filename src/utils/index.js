@@ -1,0 +1,5 @@
+export { default as assembly } from './assembly'
+export { default as chooseDrone } from './chooseDrone'
+export { default as dataParcing } from './dataParcing'
+export { default as report } from './report'
+export { default as routing } from './routing'
