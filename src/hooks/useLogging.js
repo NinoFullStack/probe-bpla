@@ -44,13 +44,6 @@ export const useLogging = (bpla_block = +getStorage('bpla_block')) => {
     removeItemStorage('error')
   }
 
-  const end = e => {
-    e.preventDefault()
-    const { btn_end_id } = e.target.dataset
-    log({ type: 'SYSTEM', action: 'session_finished', bpla_block, btn_end_id })
-    localStorage.setItem('end', true)
-  }
-
   const cancel = () => {
     const session = getStorage('session')
 
@@ -78,6 +71,15 @@ export const useLogging = (bpla_block = +getStorage('bpla_block')) => {
     })
 
     removeItemStorage('error')
+  }
+
+  const end = e => {
+    e.preventDefault()
+    nextBlock(e)
+
+    const { btn_end_id } = e.target.dataset
+    log({ type: 'SYSTEM', action: 'session_finished', bpla_block, btn_end_id })
+    localStorage.setItem('end', true)
   }
 
   const restored = () => {
