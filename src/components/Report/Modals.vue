@@ -73,14 +73,13 @@ const media = inject('media')
           }}
         </p>
 
-        <a
-          href=""
+        <button
           class="popup-complete__button button button_active"
           data-btn_end_id="btn-end-1"
           @click=";[end($event), emit('next')]"
         >
           {{ translate('Перейти к финалу') }}
-        </a>
+        </button>
       </div>
       <div class="popup-complete__preview reportModal_style-3">
         <img :src="media('src/assets/img/nerps.png')" alt="" />

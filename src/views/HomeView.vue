@@ -63,14 +63,13 @@ const media = inject('media')
           data-aos-duration="800"
           data-aos-delay="800"
         >
-          <a
-            href=""
+          <button
             data-btn_next_id="next-btn-1"
             class="button welcome-button"
             @click=";[start($event), emit('next')]"
           >
             {{ translate('Да, разрешение у меня') }}
-          </a>
+          </button>
         </div>
       </div>
     </div>

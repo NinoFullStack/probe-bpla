@@ -61,13 +61,12 @@ const media = inject('media')
         }}
       </p>
     </div>
-    <a
-      href=""
+    <button
       data-btn_next_id="next-btn-5"
       class="popup-finished__button dataParsingModal__style-2"
       @click=";[nextBlock($event), emit('next')]"
     >
       {{ translate('Составить отчёт') }}
-    </a>
+    </button>
   </div>
 </template>

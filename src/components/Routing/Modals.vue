@@ -81,14 +81,13 @@ const media = inject('media')
           }}
         </p>
 
-        <a
-          href=""
+        <button
           data-btn_next_id="next-btn-4"
           class="popup-complete__button button button_active"
           @click=";[nextBlock($event), emit('next')]"
         >
           {{ translate('Разобрать данные') }}
-        </a>
+        </button>
       </div>
       <div class="popup-complete__preview">
         <img :src="media('src/assets/img/fripick.png')" alt="" />
