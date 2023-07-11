@@ -57,19 +57,29 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="wrapper">
-    <main class="main">
-      <component :is="views[counter]" :bpla_block="counter" @next="nextBlock" />
+  <div id="bpla">
+    <div class="wrapper">
+      <main class="main">
+        <component
+          :is="views[counter]"
+          :bpla_block="counter"
+          @next="nextBlock"
+        />
 
-      <ChoosDroneModals v-if="counter === 1" bpla_block="1" @next="nextBlock" />
-      <AssemblyModals v-if="counter === 2" bpla_block="2" @next="nextBlock" />
-      <RoutingModals v-if="counter === 3" bpla_block="3" @next="nextBlock" />
-      <DataParsingModals
-        v-if="counter === 4"
-        bpla_block="4"
-        @next="nextBlock"
-      />
-      <ReportModals v-if="counter === 5" bpla_block="5" @next="nextBlock" />
-    </main>
+        <ChoosDroneModals
+          v-if="counter === 1"
+          bpla_block="1"
+          @next="nextBlock"
+        />
+        <AssemblyModals v-if="counter === 2" bpla_block="2" @next="nextBlock" />
+        <RoutingModals v-if="counter === 3" bpla_block="3" @next="nextBlock" />
+        <DataParsingModals
+          v-if="counter === 4"
+          bpla_block="4"
+          @next="nextBlock"
+        />
+        <ReportModals v-if="counter === 5" bpla_block="5" @next="nextBlock" />
+      </main>
+    </div>
   </div>
 </template>

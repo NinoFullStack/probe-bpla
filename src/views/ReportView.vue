@@ -17,8 +17,7 @@ onMounted(() => {
 <template>
   <div class="main__container desk finish-workflow">
     <div
-      class="rounded-all desk__part"
-      style="background: white"
+      class="rounded-all desk__part report_style-1"
       data-aos="fade-up"
       data-aos-duration="800"
     >
@@ -222,8 +221,7 @@ onMounted(() => {
           <div class="security-center__btn-wrapper">
             <button
               data-btn_id_activity="report-btn-11"
-              style="min-width: 140px"
-              class="security-center__answear-complete purple-button security-center__answear-complete_disabled"
+              class="report_style-2 security-center__answear-complete purple-button security-center__answear-complete_disabled"
               @click="activity($event)"
             >
               {{ translate('Проверить') }}
@@ -244,8 +242,8 @@ onMounted(() => {
       }"
     >
       <div class="questionnaire__paper">
-        <h1 class="questionnaire__title" style="font-size: 20px">Отчёт</h1>
-        <div class="questionnaire__logo" style="padding-right: 20px">
+        <h1 class="questionnaire__title report_style-3">Отчёт</h1>
+        <div class="questionnaire__logo report_style-4">
           <img
             :src="media('src/assets/img/logo-paper.svg')"
             alt=""

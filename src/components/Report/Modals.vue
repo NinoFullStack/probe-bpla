@@ -49,7 +49,7 @@ const media = inject('media')
   </div>
 
   <div class="popup-complete">
-    <div class="popup-complete__banner" style="width: 880px">
+    <div class="popup-complete__banner reportModal_style-1">
       <div class="popup-complete__article">
         <h2 class="popup-complete__title">
           {{ translate('Задание выполнено!') }}
@@ -64,7 +64,7 @@ const media = inject('media')
           `)
           }}
         </p>
-        <p style="max-width: 550px; margin-bottom: 20px">
+        <p class="reportModal_style-2">
           {{
             translate(`
             Но браконьеры не дремлют, и за ними очень удобно наблюдать с воздуха.
@@ -82,7 +82,7 @@ const media = inject('media')
           {{ translate('Перейти к финалу') }}
         </a>
       </div>
-      <div class="popup-complete__preview" style="max-width: 340px">
+      <div class="popup-complete__preview reportModal_style-3">
         <img :src="media('src/assets/img/nerps.png')" alt="" />
       </div>
     </div>

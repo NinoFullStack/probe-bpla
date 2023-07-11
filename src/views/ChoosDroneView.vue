@@ -19,8 +19,7 @@ onMounted(() => {
     <div class="desk__container">
       <div class="desk__wrapper">
         <div
-          class="desk-head desk__part"
-          style="width: 100%"
+          class="desk-head desk__part chooseDrone_style-1"
           data-aos="fade-up"
           data-aos-offset="20"
           data-aos-duration="800"

@@ -53,7 +53,7 @@ const media = inject('media')
       <div class="popup-finished__header">
         <h3 class="popup-finished__title">{{ translate('Нерпы найдены!') }}</h3>
       </div>
-      <p class="popup-finished__paragraph" style="max-width: 500px">
+      <p class="popup-finished__paragraph dataParsingModal__style-1">
         {{
           translate(
             'Вы проверили данные с камер и нашли всех животных. Фотосъёмка готова к передаче заказчику, осталось составить отчёт.'
@@ -64,8 +64,7 @@ const media = inject('media')
     <a
       href=""
       data-btn_next_id="next-btn-5"
-      class="popup-finished__button"
-      style="white-space: nowrap"
+      class="popup-finished__button dataParsingModal__style-2"
       @click=";[nextBlock($event), emit('next')]"
     >
       {{ translate('Составить отчёт') }}

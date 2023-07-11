@@ -71,7 +71,7 @@ const media = inject('media')
         <h2 class="popup-complete__title">
           {{ translate('БПЛА вернулся с задания!') }}
         </h2>
-        <p style="max-width: 550px">
+        <p class="routerModal_style-1">
           {{
             translate(`
             Робот благополучно облетел Байкал по построенному вами маршруту. Он

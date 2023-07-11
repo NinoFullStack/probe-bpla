@@ -17,14 +17,10 @@ onMounted(() => {
 <template>
   <section class="main__search-nerp search-nerp">
     <div class="search-nerp__container">
-      <div
-        class="search-nerp__wrapper workflow desk"
-        style="display: flex; margin: 16px 0"
-      >
+      <div class="search-nerp__wrapper workflow desk dataParsing_style-1">
         <div class="search-nerp__aside">
           <div
-            class="desk__part desk-head"
-            style="width: 400px"
+            class="desk__part desk-head dataParsing_style-2"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="100"
@@ -189,65 +185,54 @@ onMounted(() => {
         </div>
 
         <div
-          class="desk__part nerp-map"
-          style="border-radius: 12px; padding: 0; overflow: hidden"
+          class="desk__part nerp-map dataParsing_style-3"
           data-aos="fade-up"
           data-aos-duration="800"
         >
           <div class="nerp-map__map">
             <img
+              class="dataParsing_style-4"
               :src="media('src/assets/img/stage4/clear-map.svg')"
               alt=""
-              style="width: 100%"
             />
           </div>
           <div class="nerp-map__visor">
             <img
+              class="dataParsing_style-5"
               :src="media('src/assets/img/stage4/detect-map.svg')"
               alt=""
-              style="width: 100%"
             />
           </div>
 
           <img
+            class="dataParsing_style-6"
             :src="media('src/assets/img/stage4/checked-nerps.svg')"
             alt=""
-            style="position: absolute; width: 70.59%; left: 8.7%; top: 15.18%"
           />
 
           <div
-            class="nerp-map__box"
+            class="nerp-map__box dataParsing_style-7"
             data-btn_id_activity="data-parcing-btn-1"
-            style="bottom: 23.96%; left: 0"
             @click="activity($event)"
           ></div>
           <div
-            class="nerp-map__box"
+            class="nerp-map__box dataParsing_style-8"
             data-btn_id_activity="data-parcing-btn-2"
-            style="bottom: 30.03%; right: 2.33%"
             @click="activity($event)"
           ></div>
           <div
-            class="nerp-map__box"
+            class="nerp-map__box dataParsing_style-9"
             data-btn_id_activity="data-parcing-btn-3"
-            style="top: 6.23%; left: 32.35%"
             @click="activity($event)"
           ></div>
           <div
-            class="nerp-map__box"
+            class="nerp-map__box dataParsing_style-10"
             data-btn_id_activity="data-parcing-btn-4"
-            style="bottom: 29.07%; left: 20.59%"
             @click="activity($event)"
           ></div>
 
-          <div
-            class="nerp-map__incorrect-box"
-            style="top: 10.14%; left: 22.67%"
-          ></div>
-          <div
-            class="nerp-map__incorrect-box"
-            style="bottom: 11.98%; left: 20.59%"
-          ></div>
+          <div class="nerp-map__incorrect-box dataParsing_style-11"></div>
+          <div class="nerp-map__incorrect-box dataParsing_style-12"></div>
         </div>
       </div>
     </div>

@@ -104,14 +104,10 @@ onMounted(() => {
             </button>
           </div>
           <div
-            class="setup-body__section setup-body__section_second"
-            style="display: none"
+            class="setup-body__section setup-body__section_second assembly_style-1"
           >
             <h2>{{ translate('Предполётная проверка') }}</h2>
-            <p
-              class="desk-head__paragraph"
-              style="font-size: 16px; font-weight: 600"
-            >
+            <p class="desk-head__paragraph assembly_style-2">
               {{ translate('Выберите нужную деталь или устройство') }}
             </p>
 
@@ -129,28 +125,11 @@ onMounted(() => {
         </div>
 
         <div class="setup__enviroment">
-          <div
-            class="bag decor-setup"
-            style="
-              width: 33.28%;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -36%);
-            "
-          >
+          <div class="bag decor-setup assembly_style-14">
             <img :src="media('src/assets/img/setup-details/bag.svg')" alt="" />
           </div>
 
-          <div
-            class="drone"
-            style="
-              width: 82%;
-              position: absolute;
-              z-index: 10;
-              top: 21%;
-              left: 12%;
-            "
-          >
+          <div class="drone assembly_style-152">
             <svg
               viewBox="0 0 1017 303"
               fill="none"
@@ -343,16 +322,7 @@ onMounted(() => {
             </svg>
           </div>
 
-          <div
-            class="details"
-            style="
-              width: 81.1%;
-              position: absolute;
-              z-index: 10;
-              top: 31.4%;
-              left: 8.4%;
-            "
-          >
+          <div class="details assembly_style-15">
             <svg
               viewBox="0 0 983 308"
               fill="none"
@@ -724,9 +694,8 @@ onMounted(() => {
 
           <div class="setup__buttons">
             <button
-              class="button-purple setup-button setup-button1 setup-button_active"
+              class="button-purple setup-button setup-button1 setup-button_active assembly_style-3"
               data-construct="start"
-              style="top: 70%; left: 50%; transform: translate(-50%, 0)"
               data-btn_id_activity="assembly-btn-1"
               @click="activity($event)"
             >
@@ -734,20 +703,18 @@ onMounted(() => {
             </button>
 
             <button
-              class="button-purple setup-button setup-button2"
+              class="button-purple setup-button setup-button2 assembly_style-4"
               data-construct="second"
               data-correct="1"
-              style="top: 51%; left: 30%"
               data-btn_id_activity="assembly-btn-2"
               @click="activity($event)"
             >
               {{ translate('Прикрепить крылья') }}
             </button>
             <button
-              class="button-purple setup-button setup-button2"
+              class="button-purple setup-button setup-button2 assembly_style-5"
               data-construct="second"
               data-correct="2"
-              style="top: 68%; left: 61.6%"
               data-btn_id_activity="assembly-btn-3"
               @click="activity($event)"
             >
@@ -755,9 +722,8 @@ onMounted(() => {
             </button>
 
             <button
-              class="button-purple setup-button setup-button3"
+              class="button-purple setup-button setup-button3 assembly_style-6"
               data-construct="third"
-              style="top: 75.4%; left: 25.4%"
               data-btn_id_activity="assembly-btn-4"
               @click="activity($event)"
             >
@@ -765,9 +731,8 @@ onMounted(() => {
             </button>
 
             <button
-              class="button-purple setup-button setup-button4"
+              class="button-purple setup-button setup-button4 assembly_style-7"
               data-construct="fourth"
-              style="top: 69.5%; left: 52.1%"
               data-btn_id_activity="assembly-btn-5"
               @click="activity($event)"
             >
@@ -873,10 +838,7 @@ onMounted(() => {
               data-btn_id_activity="assembly-btn-8"
               @click="activity($event)"
             >
-              <div
-                class="statistic__icon"
-                style="width: 112px; position: relative"
-              >
+              <div class="statistic__icon assembly_style-8">
                 <svg
                   viewBox="0 0 112 71"
                   fill="none"
@@ -991,7 +953,7 @@ onMounted(() => {
                 data-btn_id_activity="assembly-btn-10"
                 @click="activity($event)"
               >
-                <div class="statistic__icon" style="margin: 0 auto">
+                <div class="statistic__icon assembly_style-9">
                   <svg
                     width="30"
                     height="30"
@@ -1018,13 +980,13 @@ onMounted(() => {
                   </svg>
                   <div class="active-icon">
                     <img
+                      class="assembly_style-10"
                       :src="media('src/assets/img/setup-statistic/radio.png')"
                       alt=""
-                      style="margin-top: 0px; margin-right: 4px; width: 35px"
                     />
                   </div>
                 </div>
-                <h3 class="statistic__title" style="margin-left: auto">
+                <h3 class="statistic__title assembly_style-11">
                   {{ translate('Радиосвязь') }}
                 </h3>
               </div>
@@ -1051,7 +1013,7 @@ onMounted(() => {
                     fill="#9822D4"
                   />
                   <path
-                    style="display: none"
+                    class="assembly_style-12"
                     d="M44.3518 42.2163L57.4148 26.3993C58.0929 25.5783 59.4137 26.2447 59.1562 27.2778L55.902 40.3364C55.7448 40.9674 56.2221 41.5782 56.8724 41.5782H60.8847C61.7292 41.5782 62.1935 42.5602 61.6575 43.2129L48.5979 59.1151C47.9034 59.9607 46.5502 59.2369 46.8682 58.1899L50.8303 45.1437C51.0253 44.5014 50.5447 43.8531 49.8734 43.8531H45.1228C44.2771 43.8531 43.8132 42.8684 44.3518 42.2163Z"
                     fill="#FFC700"
                   />
@@ -1087,10 +1049,7 @@ onMounted(() => {
               data-btn_id_activity="assembly-btn-12"
               @click="activity($event)"
             >
-              <div
-                class="statistic__icon"
-                style="width: 112px; position: relative"
-              >
+              <div class="statistic__icon assembly_style-13">
                 <svg
                   width="114"
                   height="73"
